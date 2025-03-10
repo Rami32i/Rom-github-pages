@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rami Soft - للخدمات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        li:hover {
+            background: #bbb;
+        }
+        .whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: green;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .whatsapp:hover {
+            background-color: darkgreen;
+        }
+        .prices {
+            display: none;
+            background: #eee;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rami Soft</h1>
+        <p>نقدم لك جميع الخدمات بسرعة وكفاءة</p>
+        
+        <h2>خدماتنا:</h2>
+        <ul>
+            <li>✅ تخطي iCloud</li>
+            <li>✅ تخطي FRP - Mi Account - MDM</li>
+            <li onclick="togglePrices()"> ✅ اضغط سداد فواتير Starlink</li>
+            <div id="prices" class="prices">
+                <p>🌍 <strong>نيجيريا:</strong> NGN167000 - <strong>السعر:</strong> 305.000 SDG</p>
+                <p>🌍 <strong>نيجيريا:</strong> NGN49000 - <strong>السعر:</strong> 110.000 SDG</p>
+                <p>🌍 <strong>كينيا:</strong> KES14000 - <strong>السعر:</strong> 306.000 SDG</p>
+                <p>🌍 <strong>ملاوي:</strong> MWK170000 - <strong>السعر:</strong> 295.000 SDG</p>
+                <p>🌍 <strong>زامبيا:</strong> ZMW2500 - <strong>السعر:</strong> 267.000 SDG</p>
+                <p>🌍 <strong>رواندا:</strong> RWF128000 - <strong>السعر:</strong> 272.000 SDG</p>
+            </div>
+            <li>✅ شحن PUBG و Free Fire</li>
+            <li>✅ جميع الخدمات الأونلاين</li>
+        </ul>
+
+        <a class="whatsapp" href="https://wa.me/201234567890" target="_blank">تواصل معنا عبر واتساب</a>
+    </div>
+
+    <script>
+        function togglePrices() {
+            var prices = document.getElementById("prices");
+            if (prices.style.display === "none") {
+                prices.style.display = "block";
+            } else {
+                prices.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
